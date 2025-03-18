@@ -8,7 +8,7 @@ const clientSchema = new mongoose.Schema({
   telephoneNumber: { type: String },
   email: { type: String, required: true },
   company: { type: String, required: true },
-  companyAddress: { type: String, required: true },
+  companyAddress: { type: String },
   companyNumber: { type: String },
   companyEmail: { type: String },
   requirement: { type: String },

@@ -65,7 +65,7 @@ const ClientForm = () => {
         </p>
       )}
       <form onSubmit={handleSubmit}>
-        <div className="p-4 w-full flex flex-wrap gap-4">
+        <div className="p-4 w-full flex flex-wrap gap-4 text-zinc-800">
           <div className="grid grid-cols-2 w-full gap-2 items-start">
             <div className="flex flex-wrap">
               <p className="text-sm font-semibold">Full Name</p>
@@ -165,7 +165,6 @@ const ClientForm = () => {
                 value={formData.companyAddress}
                 className="w-full border px-2 py-1 rounded border-zinc-300 h-[120px]"
                 onChange={handleChange}
-                required
               />
               <label className="text-xs">Company Address</label>
             </div>
@@ -174,7 +173,7 @@ const ClientForm = () => {
                 <input
                   type="email"
                   name="companyEmail"
-                  value={formData.companyEmail}
+                  value={formData.companyEmail || ""}
                   className="w-full border px-2 py-1 rounded border-zinc-300"
                   onChange={handleChange}
                 />
